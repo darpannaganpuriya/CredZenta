@@ -125,7 +125,7 @@ export function AIAnalysisTab({ app }: AIAnalysisTabProps) {
           <AlertTriangle className="w-3.5 h-3.5 text-amber-600 flex-shrink-0 mt-0.5" />
           <p className="text-[11px] text-amber-700">
             This analysis is AI-assisted and for decision-support only. Credit officers must independently verify all facts
-            before making any credit decision. IntelliCredit does not make automated lending decisions.
+            before making any credit decision. CredZenta does not make automated lending decisions.
           </p>
         </div>
       </div>

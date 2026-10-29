@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useNavigate, Navigate } from "react-router-dom";
-import { Building2, Lock, Mail, Eye, EyeOff, Shield, ArrowRight } from "lucide-react";
+import { Lock, Mail, Eye, EyeOff, Shield, ArrowRight } from "lucide-react";
 import { cn } from "../lib/utils";
 
 export function LoginPage() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("priya.mehta@intellicredit.in");
+  const [email, setEmail] = useState("priya.mehta@credzenta.in");
   const [password, setPassword] = useState("demo1234");
   const [showPassword, setShowPassword] = useState(false);
   const [remember, setRemember] = useState(false);
@@ -47,10 +47,7 @@ export function LoginPage() {
       <div className="relative w-full max-w-sm animate-fade-in">
         {/* Logo */}
         <div className="flex flex-col items-center mb-8">
-          <div className="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-4 shadow-lg shadow-brand-600/30">
-            <Building2 className="w-7 h-7 text-white" />
-          </div>
-          <h1 className="text-xl font-bold text-white tracking-tight">IntelliCredit</h1>
+          <img src="/credzenta-logo.png" alt="CredZenta" className="h-14 w-auto object-contain mb-4" />
           <p className="mt-1 text-xs text-slate-400 uppercase tracking-widest">
             AI-Powered Credit Appraisal Platform
           </p>

@@ -68,7 +68,8 @@ export function CAMTab({ app }: CAMTabProps) {
   };
 
   const handleDownload = () => {
-    const html = generateCAMReport(app, recommendation, observations, conditions);
+    const logoUrl = `${window.location.origin}/credzenta-logo.png`;
+    const html = generateCAMReport(app, recommendation, observations, conditions, logoUrl);
     const printWin = window.open("", "_blank", "width=900,height=700");
     if (!printWin) {
       alert("Please allow pop-ups for this site to download the PDF.");

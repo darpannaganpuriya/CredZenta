@@ -12,7 +12,6 @@ export const CAMReportPDF = React.forwardRef<HTMLDivElement, CAMReportPDFProps>(
   ({ app, recommendation, observations }, ref) => {
     
     const currentDate = formatDate(new Date().toISOString());
-    const logoColor = "#a3e635"; // ableCredit green approximation
 
     return (
       <div ref={ref} className="bg-white text-black font-sans text-[10px] w-[800px] leading-relaxed mx-auto">
@@ -33,7 +32,7 @@ export const CAMReportPDF = React.forwardRef<HTMLDivElement, CAMReportPDFProps>(
           {/* Header */}
           <div className="flex justify-between items-center bg-[#111827] text-white p-3 mb-6">
             <div className="font-semibold text-sm">Credit Information Report</div>
-            <div className="font-bold text-sm italic" style={{ color: logoColor }}>IntelliCredit</div>
+            <img src="/credzenta-logo.png" alt="CredZenta" className="h-7 w-auto object-contain" />
           </div>
 
           {/* Main Title Box */}
@@ -119,7 +118,7 @@ export const CAMReportPDF = React.forwardRef<HTMLDivElement, CAMReportPDFProps>(
           {/* Header */}
           <div className="flex justify-between items-center bg-[#111827] text-white p-3 mb-6">
             <div className="font-semibold text-sm">Credit Information Report</div>
-            <div className="font-bold text-sm italic" style={{ color: logoColor }}>IntelliCredit</div>
+            <img src="/credzenta-logo.png" alt="CredZenta" className="h-7 w-auto object-contain" />
           </div>
 
           <div className="pdf-section">
@@ -167,7 +166,7 @@ export const CAMReportPDF = React.forwardRef<HTMLDivElement, CAMReportPDFProps>(
           {/* Header */}
           <div className="flex justify-between items-center bg-[#111827] text-white p-3 mb-6">
             <div className="font-semibold text-sm">Credit Information Report</div>
-            <div className="font-bold text-sm italic" style={{ color: logoColor }}>IntelliCredit</div>
+            <img src="/credzenta-logo.png" alt="CredZenta" className="h-7 w-auto object-contain" />
           </div>
 
           <h3 className="text-sm font-bold mb-2">Assets:</h3>
@@ -232,7 +231,7 @@ export const CAMReportPDF = React.forwardRef<HTMLDivElement, CAMReportPDFProps>(
           {/* Header */}
           <div className="flex justify-between items-center bg-[#111827] text-white p-3 mb-6">
             <div className="font-semibold text-sm">Credit Information Report</div>
-            <div className="font-bold text-sm italic" style={{ color: logoColor }}>IntelliCredit</div>
+            <img src="/credzenta-logo.png" alt="CredZenta" className="h-7 w-auto object-contain" />
           </div>
 
           <h2 className="text-lg font-bold mb-2">References</h2>
@@ -287,7 +286,7 @@ export const CAMReportPDF = React.forwardRef<HTMLDivElement, CAMReportPDFProps>(
           {/* Header */}
           <div className="flex justify-between items-center bg-[#111827] text-white p-3 mb-6">
             <div className="font-semibold text-sm">Credit Information Report</div>
-            <div className="font-bold text-sm italic" style={{ color: logoColor }}>IntelliCredit</div>
+            <img src="/credzenta-logo.png" alt="CredZenta" className="h-7 w-auto object-contain" />
           </div>
 
           <div className="pdf-section">
@@ -334,7 +333,7 @@ export const CAMReportPDF = React.forwardRef<HTMLDivElement, CAMReportPDFProps>(
           {/* Header */}
           <div className="flex justify-between items-center bg-[#111827] text-white p-3 mb-6">
             <div className="font-semibold text-sm">Credit Information Report</div>
-            <div className="font-bold text-sm italic" style={{ color: logoColor }}>IntelliCredit</div>
+            <img src="/credzenta-logo.png" alt="CredZenta" className="h-7 w-auto object-contain" />
           </div>
 
           <div className="pdf-section">
@@ -401,7 +400,7 @@ export const CAMReportPDF = React.forwardRef<HTMLDivElement, CAMReportPDFProps>(
           {/* Header */}
           <div className="flex justify-between items-center bg-[#111827] text-white p-3 mb-6">
             <div className="font-semibold text-sm">Credit Information Report</div>
-            <div className="font-bold text-sm italic" style={{ color: logoColor }}>IntelliCredit</div>
+            <img src="/credzenta-logo.png" alt="CredZenta" className="h-7 w-auto object-contain" />
           </div>
 
           <div className="border-t border-b border-black py-2 mb-6 text-sm font-bold">

@@ -14,7 +14,8 @@ export function generateCAMReport(
   app: ApplicationDetails,
   recommendation: string | null,
   observations: string,
-  conditions: string
+  conditions: string,
+  logoUrl: string = ""
 ): string {
   const date = new Date().toLocaleDateString("en-IN", {
     day: "2-digit",
@@ -181,7 +182,8 @@ export function generateCAMReport(
     td { border: 1px solid #ccc; padding: 4px 8px; vertical-align: top; }
     .section-title { background: #e4e4e7; border: 1px solid #000; padding: 5px 8px; text-align: center; font-weight: bold; margin-bottom: 6px; font-size: 10px; letter-spacing: .5px; }
     .header { background: #111827; color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; margin-bottom: 16px; }
-    .header-brand { color: #a3e635; font-weight: bold; font-style: italic; font-size: 14px; }
+    .header-logo { height: 28px; width: auto; object-fit: contain; }
+    .header-brand { color: #00BFA5; font-weight: bold; font-style: italic; font-size: 14px; }
     .main-title { border: 2px solid #000; background: #e4e4e7; padding: 14px; text-align: center; margin-bottom: 16px; }
     .main-title h1 { font-size: 20px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
     .rec-box { padding: 16px 20px; font-size: 18px; font-weight: bold; border-radius: 4px; margin-bottom: 16px; }
@@ -203,7 +205,7 @@ export function generateCAMReport(
 <div class="page">
   <div class="header">
     <span>Credit Appraisal Memorandum</span>
-    <span class="header-brand">IntelliCredit</span>
+    <span class="header-brand">${logoUrl ? `<img src="${logoUrl}" class="header-logo" alt="CredZenta" />` : 'CredZenta'}</span>
   </div>
 
   <div class="main-title">
@@ -262,7 +264,7 @@ export function generateCAMReport(
 <div class="page page-break">
   <div class="header">
     <span>Credit Appraisal Memorandum — ${app.applicationNumber}</span>
-    <span class="header-brand">IntelliCredit</span>
+    <span class="header-brand">${logoUrl ? `<img src="${logoUrl}" class="header-logo" alt="CredZenta" />`: 'CredZenta'}</span>
   </div>
 
   <div class="section-title">Business Details</div>
@@ -325,7 +327,7 @@ export function generateCAMReport(
 <div class="page page-break">
   <div class="header">
     <span>Credit Appraisal Memorandum — ${app.applicationNumber}</span>
-    <span class="header-brand">IntelliCredit</span>
+    <span class="header-brand">${logoUrl ? `<img src="${logoUrl}" class="header-logo" alt="CredZenta" />`: 'CredZenta'}</span>
   </div>
 
   <h2>Income & Loan Eligibility Analysis</h2>
@@ -394,7 +396,7 @@ export function generateCAMReport(
 <div class="page page-break">
   <div class="header">
     <span>Credit Appraisal Memorandum — ${app.applicationNumber}</span>
-    <span class="header-brand">IntelliCredit</span>
+    <span class="header-brand">${logoUrl ? `<img src="${logoUrl}" class="header-logo" alt="CredZenta" />`: 'CredZenta'}</span>
   </div>
 
   <div style="display:flex;gap:12px;margin-bottom:16px;">
@@ -457,7 +459,7 @@ export function generateCAMReport(
 <div class="page page-break">
   <div class="header">
     <span>Credit Appraisal Memorandum — ${app.applicationNumber}</span>
-    <span class="header-brand">IntelliCredit</span>
+    <span class="header-brand">${logoUrl ? `<img src="${logoUrl}" class="header-logo" alt="CredZenta" />`: 'CredZenta'}</span>
   </div>
 
   <div class="section-title">Document Verification Status</div>
@@ -498,7 +500,7 @@ export function generateCAMReport(
 <div class="page page-break">
   <div class="header">
     <span>Credit Appraisal Memorandum — ${app.applicationNumber}</span>
-    <span class="header-brand">IntelliCredit</span>
+    <span class="header-brand">${logoUrl ? `<img src="${logoUrl}" class="header-logo" alt="CredZenta" />`: 'CredZenta'}</span>
   </div>
 
   <div class="score-badge" style="background:${scoreBg};">
@@ -534,7 +536,7 @@ export function generateCAMReport(
 <div class="page page-break">
   <div class="header">
     <span>Credit Appraisal Memorandum — ${app.applicationNumber}</span>
-    <span class="header-brand">IntelliCredit</span>
+    <span class="header-brand">${logoUrl ? `<img src="${logoUrl}" class="header-logo" alt="CredZenta" />`: 'CredZenta'}</span>
   </div>
 
   <div class="section-title">Credit Officer's Observations & Comments</div>
@@ -565,7 +567,7 @@ export function generateCAMReport(
   </ul>
 
   <div style="margin-top:24px;border-top:1px solid #ccc;padding-top:12px;font-size:9px;color:#64748b;">
-    <p>This Credit Appraisal Memorandum is prepared by <strong>IntelliCredit</strong> for internal use only.</p>
+    <p>This Credit Appraisal Memorandum is prepared by <strong>CredZenta</strong> for internal use only.</p>
     <p>Generated on: ${new Date().toLocaleString("en-IN")} | Application: ${app.applicationNumber} | Officer: ${app.assignedOfficer}</p>
     <p style="margin-top:4px;">This recommendation is subject to approval by the authorized credit authority as per the delegation matrix. All credit decisions require human authorization.</p>
   </div>

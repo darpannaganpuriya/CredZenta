@@ -108,7 +108,7 @@ export function SettingsPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <InputField label="First Name" defaultValue="Priya" />
                 <InputField label="Last Name" defaultValue="Mehta" />
-                <InputField label="Email Address" defaultValue="priya.mehta@intellicredit.in" type="email" />
+                <InputField label="Email Address" defaultValue="priya.mehta@credzenta.in" type="email" />
                 <InputField label="Phone" defaultValue="+91 98765 43210" />
                 <InputField label="Department" defaultValue="Credit Department" />
                 <InputField label="Branch" defaultValue="Mumbai Main Branch" />

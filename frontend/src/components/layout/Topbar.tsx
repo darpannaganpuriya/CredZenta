@@ -46,7 +46,7 @@ export function Topbar({ onMenuClick }: TopbarProps) {
       <div className="flex-1 min-w-0">
         <h1 className="text-sm font-semibold text-slate-900 truncate">{pageTitle}</h1>
         <div className="hidden sm:flex items-center gap-1 text-xs text-slate-400">
-          <span>IntelliCredit</span>
+          <span>CredZenta</span>
           {crumbs.map((crumb) => (
             <span key={crumb.path} className="flex items-center gap-1">
               <ChevronRight className="w-3 h-3" />

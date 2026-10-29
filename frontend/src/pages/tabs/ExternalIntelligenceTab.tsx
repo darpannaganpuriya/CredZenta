@@ -67,7 +67,7 @@ export function ExternalIntelligenceTab({ app }: ExternalIntelligenceTabProps) {
           <p className="text-sm font-semibold text-amber-800">Demo / Mock Data</p>
           <p className="text-xs text-amber-700 mt-1">
             All external intelligence data shown here is sample/mock data for demonstration purposes only.
-            IntelliCredit does not claim live connectivity to MCA21, CIBIL, RBI, SEBI, or government portals.
+            CredZenta does not claim live connectivity to MCA21, CIBIL, RBI, SEBI, or government portals.
             Real integrations will be configured per institution requirements.
           </p>
         </div>
